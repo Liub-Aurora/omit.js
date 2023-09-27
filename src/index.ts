@@ -1,6 +1,6 @@
-function omit(obj, fields) {
+function omit(obj: Object, fields: string[]) {
   // eslint-disable-next-line prefer-object-spread
-  const shallowCopy = Object.assign({}, obj);
+  const shallowCopy: any = Object.assign({}, obj);
   for (let i = 0; i < fields.length; i += 1) {
     const key = fields[i];
     delete shallowCopy[key];

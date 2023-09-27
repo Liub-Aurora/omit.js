@@ -1,5 +1,5 @@
 export default {
-  entry: ['src/index.js'],
+  entry: ['src/index.ts'],
   cjs: 'babel',
   esm: { type: 'babel', importLibToEs: true },
   doc: { base: '/switch' },
